@@ -14,6 +14,7 @@ export const CardContainer = styled.div`
   border-radius: 15px;
   max-width: 100%;
   flex-wrap: wrap;
+
   @media (max-width: 375px) {
     padding: 24px;
     justify-content: center;
@@ -29,6 +30,7 @@ export const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 37px;
+
   @media (max-width: 375px) {
     margin: unset;
   }
@@ -91,6 +93,7 @@ export const CompanyInfoContainer = styled.div`
   margin-top: 39px;
   max-width: 100%;
   grid-auto-flow: column;
+
   @media (max-width: 375px) {
     grid-auto-flow: row;
     grid-gap: 15px;

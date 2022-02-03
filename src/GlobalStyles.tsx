@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body{
     background-color: ${LightColors.ghostWhite};
+    
     @media only screen and (max-width: 375px) {
       & {
         padding: 0 24px;        

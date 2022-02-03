@@ -1,8 +1,9 @@
 import React from "react";
-import { SearchBarContainer, SearchInput } from "./Styles";
+import { SearchBarContainer } from "./Styles";
 import { SearchIcon } from "./SearchIcon";
 import { SearchButton } from "./SearchButton";
 
+import "./SearchBar.css";
 type userCardProps = {
   onSubmit(user: string): void;
 };
@@ -13,7 +14,9 @@ export const SearchBar = ({ onSubmit }: userCardProps) => {
   return (
     <SearchBarContainer>
       <SearchIcon />
-      <SearchInput
+      <input
+        placeholder="Search GitHub username…"
+        className="searchInput"
         onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
           setTypedUser(event.target.value)
         }

@@ -16,6 +16,12 @@ export const H3 = styled.h3`
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
+
+  @media (max-width: 375px) {
+    & {
+      font-size: 14px;
+    }
+  }
 `;
 
 export const H4 = styled.h4`
