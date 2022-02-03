@@ -11,6 +11,7 @@ export const SearchBarContainer = styled.div`
 
 export const SearchInput = styled.input`
   width: 100%;
+  width: 100%;
   height: 100%;
   background-color: ${LightColors.white};
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);

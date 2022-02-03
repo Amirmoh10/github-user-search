@@ -15,11 +15,9 @@ export const GlobalStyle = createGlobalStyle`
 
   body{
     background-color: ${LightColors.ghostWhite};
-    padding: 0 calc((100vw - 730px) / 2 );
     @media only screen and (max-width: 375px) {
       & {
-        display: flex;
-        
+        padding: 0 24px;        
       }
     }
   }

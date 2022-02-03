@@ -13,6 +13,11 @@ export const CardContainer = styled.div`
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
   border-radius: 15px;
   max-width: 100%;
+  flex-wrap: wrap;
+  @media (max-width: 375px) {
+    padding: 24px;
+    justify-content: center;
+  }
 `;
 
 export const Logo = styled.img`
@@ -24,13 +29,20 @@ export const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 37px;
+  @media (max-width: 375px) {
+    margin: unset;
+  }
 `;
 
 export const ProfileInfo = styled.div`
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 138px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 375px) {
+    flex-direction: column;
+    margin-top: 10px;
+  }
 `;
 
 export const ProfileName = styled(H1)`
@@ -56,6 +68,11 @@ export const StatsContainer = styled.div`
   grid-gap: 90px;
   background-color: ${LightColors.ghostWhite};
   padding: 15px 32px;
+
+  @media (max-width: 375px) {
+    grid-gap: 20px;
+    padding: 18px 15px;
+  }
 `;
 
 export const Column = styled.div`
@@ -63,6 +80,10 @@ export const Column = styled.div`
   grid-auto-flow: Row;
   grid-gap: 1px;
   color: ${LightColors.licorice};
+
+  @media (max-width: 375px) {
+    justify-items: center;
+  }
 `;
 
 export const CompanyInfoContainer = styled.div`
@@ -70,6 +91,10 @@ export const CompanyInfoContainer = styled.div`
   margin-top: 39px;
   max-width: 100%;
   grid-auto-flow: column;
+  @media (max-width: 375px) {
+    grid-auto-flow: row;
+    grid-gap: 15px;
+  }
 `;
 
 export const CompanyInfoColumn = styled.div`
