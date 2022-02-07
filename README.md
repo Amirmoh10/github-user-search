@@ -2,7 +2,7 @@ A GitHub user search app using the GitHub users API. Built using (React, TypeScr
 
 ## App Live Demo
 
-Click on this [link](https://61fbea87fc77d200089a63e4--jovial-borg-a094b7.netlify.app/) and test it. 
+Click on this [link](https://jovial-borg-a094b7.netlify.app/) and test it. 
 
 ## Available Scripts
 
